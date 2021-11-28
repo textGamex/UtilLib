@@ -22,6 +22,8 @@ namespace UtilLib
 
         public static bool NextBoolean(this Random random, double trueProbability)
         {
+            if (trueProbability <= 0.0)
+                return false;
             return random.NextDouble() <= trueProbability;
         }
     }
