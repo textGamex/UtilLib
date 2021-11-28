@@ -1,0 +1,10 @@
+﻿<ProjectConfiguration>
+  <Settings>
+    <HiddenComponentWarnings />
+    <IgnoredTests>
+      <NamedTestSelector>
+        <TestName>UtilLib.Tests.RandomExtendTests.NextSignedInt64Test</TestName>
+      </NamedTestSelector>
+    </IgnoredTests>
+  </Settings>
+</ProjectConfiguration>

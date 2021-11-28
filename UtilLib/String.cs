@@ -38,18 +38,23 @@ namespace UtilLib
             return BitConverter.ToString(by).Replace("-", "").ToLower(); //64
         }
 
+
         public static string GetCompleteUrl(this string uri, Dictionary<string, string> uriParameter)
         {
-            bool firstParameter = false;
+            bool firstParameter = true;
             var sb = new StringBuilder(uri);
             foreach (var key in uriParameter.Keys)
             {
-                if (!firstParameter)
+                if (firstParameter)
                 {
-                    sb.Append('?').Append(key).Append('=').Append(uriParameter[key]);
-                    firstParameter = true;
+                    sb.Append('?');
+                    firstParameter = false;
                 }
-                sb.Append('&').Append(key).Append('=').Append(uriParameter[key]);
+                else
+                {
+                    sb.Append('&');
+                }
+                sb.Append(key).Append('=').Append(uriParameter[key]);
             }
             return sb.ToString();
         }
