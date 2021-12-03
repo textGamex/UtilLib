@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UtilLib
+namespace UtilityLib
 {
     /// <summary>
     /// <see cref="Random"/>扩展
