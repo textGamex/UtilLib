@@ -6,11 +6,15 @@ using System.Text;
 namespace UtilityLib
 {
     /// <summary>
-    /// 扩展
+    /// <seealso cref="String"/>扩展
     /// </summary>
     public static class StringExtend
     {
-        //获取字符串的MD5码
+        /// <summary>
+        /// 获取字符串的MD5码
+        /// </summary>
+        /// <param name="input">字符串</param>
+        /// <returns>字符串的MD5码</returns>
         public static string MD5Hash(this string input)
         {
             // Use input string to calculate MD5 hash
@@ -27,6 +31,11 @@ namespace UtilityLib
             return sb.ToString();
         }
 
+        /// <summary>
+        /// 获得字符串的SHA256码
+        /// </summary>
+        /// <param name="str">字符串</param>
+        /// <returns>字符串的SHA256码</returns>
         public static string SHA256(this string str)
         {
             //如果str有中文，不同Encoding的sha是不同的!!
@@ -38,7 +47,12 @@ namespace UtilityLib
             return BitConverter.ToString(by).Replace("-", "").ToLower(); //64
         }
 
-
+        /// <summary>
+        /// 获得一个已经拼接好的URI链接
+        /// </summary>
+        /// <param name="uri">URI链接</param>
+        /// <param name="uriParameter">参数字典</param>
+        /// <returns>一个已经拼接好的URI链接</returns>
         public static string GetCompleteUrl(this string uri, Dictionary<string, string> uriParameter)
         {
             bool firstParameter = true;

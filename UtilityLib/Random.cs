@@ -5,7 +5,7 @@ using System.Text;
 namespace UtilityLib
 {
     /// <summary>
-    /// <see cref="Random"/>扩展
+    /// <seealso cref="Random"/>扩展
     /// </summary>
     public static class RandomExtend
     {
@@ -20,6 +20,13 @@ namespace UtilityLib
             return number;
         }
 
+        /// <summary>
+        /// 以指定的概率返回<c>true</c>
+        /// </summary>
+        /// <param name="random"></param>
+        /// <param name="trueProbability">返回<c>
+        /// true</c>的概率</param>
+        /// <returns><c>true</c>或<c>false</c></returns>
         public static bool NextBoolean(this Random random, double trueProbability)
         {
             if (trueProbability <= 0.0)

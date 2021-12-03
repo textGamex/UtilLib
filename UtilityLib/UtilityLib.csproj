@@ -11,6 +11,9 @@
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <EnableNETAnalyzers>True</EnableNETAnalyzers>
     <Description>一个实用扩展库</Description>
+    <Version>1.0.2</Version>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <NeutralLanguage>zh-CN</NeutralLanguage>
   </PropertyGroup>
 
 </Project>

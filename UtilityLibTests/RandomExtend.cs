@@ -1,6 +1,6 @@
 using NUnit.Framework;
 using System;
-using UtilLib;
+using UtilityLib;
 
 namespace UtilityLibTests
 {
