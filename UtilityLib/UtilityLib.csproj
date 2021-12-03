@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company>NONE</Company>
+    <Authors>千年</Authors>
+    <PackageProjectUrl>https://github.com/textGamex/UtilLib</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/textGamex/UtilLib</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
 </Project>
